@@ -51,8 +51,44 @@ const questions = [{
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
 
+const generate = (response) => `
+# Title
+${response.title}
+​
+${badge}
+​
+## Description
+${response.description} 
+​
+​
+## Table of Contents
+${response.table} 
+​
+​
+## What I used to intall
+${response.installation} 
+​
+​
+## Usage Data
+${response.usage} 
+​
+​
+## What license did you use?
+${response.license} 
+​
+​
+​
+## Who are the Contributors?
+${response.contribution} 
+​
+​
+## How many test runs?
+${response.tests} 
+​
+​
+## Any questions?
+${response.questions}`
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
@@ -74,89 +110,13 @@ function init() {
                     break;
             }
 
-            //     const template = (response) => `# Title
-            //     ${response.title}
-            //     \n
-
-            //    ## Description
-            //     ${response.description} 
-            //     \n
-
-            //    ## Table of Contents
-            //     ${response.table} 
-            //     \n
-
-            //    ## What I used to intall
-            //     ${response.installation} 
-            //     \n
-
-            //    ## Usage Data
-            //    ${response.usage} 
-            //    \n
-
-            //    ## What license did you use?
-            //    ${response.license} 
-            //    \n 
-            //    \n
-            //    ${badge}
-
-            //    ## Who are the Contributors?
-            //    ${response.contribution} 
-            //    \n
-
-            //    ## How many test runs?
-            //    ${response.tests} 
-            //    \n
-
-            //    ## Any questions?
-            //    ${response.questions}`
-
-
-            // let template = ` # this is the ${response.title} \n \n ${badge} `
-
-
-            fs.writeFile("ReadMe.md", `# Title
-            ${response.title}
-            
-            ${badge}
-           
-           ## Description
-            ${response.description} 
-            
-           
-           ## Table of Contents
-            ${response.table} 
-            
-           
-           ## What I used to intall
-            ${response.installation} 
-            
-           
-           ## Usage Data
-           ${response.usage} 
-           
-           
-           ## What license did you use?
-           ${response.license} 
-           
-           
-
-           ## Who are the Contributors?
-           ${response.contribution} 
-           
-           
-           ## How many test runs?
-           ${response.tests} 
-           
-           
-           ## Any questions?
-           ${response.questions}`, (error) =>
+            fs.writeFile("ReadMe.md", generate({ ...response }), (error) =>
                 error ? console.error(error) : console.log('success'))
 
         })
 
 }
 
-
 // Function call to initialize app
 init();
+
