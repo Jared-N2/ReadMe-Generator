@@ -1,37 +1,13 @@
+# Read Me Generator
+The purpose of this assignment was to create a function to generate a markdown file.
 
-# Title
-read me generator
-​
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-​
-## Description
-generates a read me 
-​
-​
-## Table of Contents
- 
-​
-​
-## What I used to install
-inquirer 
-​
-​
-## Usage Data
-1 user 
-​
-​
-## What license did you use?
-MIT License 
-​
-​
-​
-## Who are the Contributors?
-myself 
-​
-​
-## How many test runs?
-lots 
-​
-​
-## Any questions?
-none
+# what I did
+ I basically started with a template from the student mini project and tweaked it a little bit.
+ I switched it from generating a html file to generating a markdown file.
+
+# Link to my repo
+https://github.com/Jared-N2/ReadMe-Generator
+
+# Screencastify demo
+https://drive.google.com/file/d/15ewxYJezDzZBp4rZwlAV1nj4ykl2mHhd/view
+

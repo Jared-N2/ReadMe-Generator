@@ -110,7 +110,7 @@ function init() {
                     break;
             }
 
-            fs.writeFile("ReadMe.md", generate({ ...response }), (error) =>
+            fs.writeFile("ReadMe2.md", generate({ ...response }), (error) =>
                 error ? console.error(error) : console.log('success'))
 
         })
