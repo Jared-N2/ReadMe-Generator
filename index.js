@@ -66,7 +66,7 @@ ${response.description}
 ${response.table} 
 ​
 ​
-## What I used to intall
+## What I used to install
 ${response.installation} 
 ​
 ​

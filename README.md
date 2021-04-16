@@ -1,37 +1,8 @@
+# Read Me Generator
+The purpose of this assignment was to create a function to generate a markdown file.
 
-# Title
-j
-​
-![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)
-​
-## Description
-j 
-​
-​
-## Table of Contents
-j 
-​
-​
-## What I used to intall
-j 
-​
-​
-## Usage Data
-j 
-​
-​
-## What license did you use?
-GNU General Public License v3.0 
-​
-​
-​
-## Who are the Contributors?
- 
-​
-​
-## How many test runs?
-j 
-​
-​
-## Any questions?
-j
+# what I did
+ I basically started with a template from the student mini project and tweaked it a little bit.
+ I switched it from generating a html file to generating a markdown file.
+
+# Link to my repo
